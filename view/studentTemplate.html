@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>%{STUDENT_NAME}%</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../studentTemplate.css">
+</head>
+<body>
+    <div class = "header">
+        <div class="header-container">
+            <a href="/" class = "headerText">
+                IPU Result
+            </a>
+            <div menu-container>
+                <ul class="menu-items">
+                    <li class="menu-item"><a href='https://github.com/nmnishant'>GitHub</a></li>
+                    <li class="menu-item"><a href='https://www.linkedin.com/in/nmnishant/'>Reach me</a></li>
+                    <li class="menu-item"><a href='mailto: nishantmaurya2000@gmail.com'>Contact me</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <main class = "main-container">
+        <div class="studentProfile">     
+    
+            <div class="studentMarks">
+                <div class="result-heading">Result</div>
+
+                <div class="basicInfoBox">
+                    <span class="material-icons profilePhoto">person</span>
+                    <div class="studentBasicInfo-container">
+                        <div class="studentBasicInfo">
+                            <div class="studentName">%{STUDENT_NAME}%</div>
+                            <div class="studentRollNo">%{ROLL_NO}%</div>
+                        </div>
+                        <div class="programme-name">%{BRANCH_NAME}%</div>
+                        <div class="college-name">%{COLLEGE_NAME}%</div>
+                    </div>
+                </div>
+
+
+                <div class="conclusion">
+                    <div class="marks">
+                        <div class="left-text">Marks</div>
+                        <div class="right-text">%{TOTAL_MARKS}%</div>
+                    </div>
+                    <div class="percentage">
+                        <div class="left-text">Percentage</div>
+                        <div class="right-text">%{TOTAL_PERCENTAGE}%</div>
+                    </div>
+                </div>
+
+                
+                <table class="marks-table">
+                    <thead>
+                        <tr>
+                            <th class="firstCol">Subject</th>
+                            <th>Theory</th>
+                            <th>Practical</th>
+                            <th>Total</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        %{TABLE_BODY_ROWS}%
+                    </tbody>
+                </table>
+
+            </div> 
+
+        </div>
+    </main>
+</body>
+</html>
