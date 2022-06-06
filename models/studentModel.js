@@ -61,5 +61,5 @@ const studentSchema = new mongoose.Schema({
     percentage : String
 });
 
-const studentModel = mongoose.model('Student', studentSchema);
+const studentModel = mongoose.model('Student2', studentSchema);
 module.exports = studentModel;
